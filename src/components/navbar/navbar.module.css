@@ -1,0 +1,26 @@
+.navbar{
+    height: 70px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar .logo{ 
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar .navItem{
+    font-weight: 400;
+    padding: 0 10px;
+    color: #000;
+}
+
+.navbar .navItem:hover{
+    color: #5e5c5c;
+    font-weight: bold;
+}
+
