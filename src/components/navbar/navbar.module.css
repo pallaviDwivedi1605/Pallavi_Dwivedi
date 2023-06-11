@@ -1,57 +1,35 @@
 .navbar{
     height: 70px;
-    padding: 0 25px;
+    padding: 0 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    box-shadow: 0px 0px 10px #414040c9;
 }
 
-.navbar .logo{ 
-    font-weight: 700;
-    color: #fff;
-    font-size: 30px;
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.navbar .navItem{
-    font-weight: 400;
-    padding: 0 10px;
-    color: #40128B;
+.nav_item{
+    color: #302f2f;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: background-color 2s ease-in, font-weight 2s linear;
 }
 
-.navbar .navItem:hover{
-    color: #5812c9;
+.nav_item:hover{
+    background-color: #eee5e5c7;
+    opacity: 70;
     font-weight: bold;
 }
 
-.container a
-{
-    color: #FFF;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+.active{
+    background-color: #eee5e5c7;
 }
 
-
-.pullUp a:before
-{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.pullUp a:hover:before
-{
-    height: 100%;
-}
 

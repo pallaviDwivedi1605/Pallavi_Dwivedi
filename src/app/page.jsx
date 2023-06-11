@@ -11,7 +11,7 @@ const pFont = Josefin_Sans({subsets: ['latin'],weight: '400'})
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.main}>
       <section id="homepage-section">
         <div className={styles.container}>
           <div className={styles.heading}>
@@ -22,8 +22,11 @@ export default function Home() {
           <Image className={styles.image} src={Pallavi} width={200} height={200} alt="Pallavi Dwivedi" />
         </div>
       </section>
+      <hr className={styles.ruler} />
       <About/>
+      <hr className={styles.ruler} />
       <Project/>
+      <hr className={styles.ruler} />
       <Contact/>
     </div>
     

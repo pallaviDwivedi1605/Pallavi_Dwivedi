@@ -1,3 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+
 .container{
     height: 90vh;
     display: flex;
@@ -26,4 +33,15 @@
 .container .image{
     border: 3px solid #1f199e;
     border-radius: 50%;
+}
+
+.ruler{
+    margin: 50px;
+    width: 10%;
+    height: 0;
+    color: transparent;
+    border-top: 10px;
+    border-style: dotted;
+    border-color: #a7a5a5;
+    margin: 0 auto;
 }

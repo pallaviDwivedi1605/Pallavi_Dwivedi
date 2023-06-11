@@ -4,7 +4,9 @@ import styles from "./page.module.css"
 function Contact() {
   return (
     <section id="contact-section">
-      <div className={styles.container}>Contact</div>
+      <div className={styles.container}>
+        
+      </div>
     </section>
   )
 }

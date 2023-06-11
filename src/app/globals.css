@@ -8,7 +8,7 @@
 body{
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #E4A5FF;
+    background-color: #95BDFF;
     color: #161616;
 }
 
@@ -16,6 +16,15 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
 
 .container{
     min-width: 100vw;
