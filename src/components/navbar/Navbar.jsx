@@ -47,7 +47,7 @@ function Navbar() {
         {
             links.map(link=>(
             <Link 
-            className={styles.navItem} 
+            className={styles.pullUp} 
             key={link.id}  
             href={link.url}
             >

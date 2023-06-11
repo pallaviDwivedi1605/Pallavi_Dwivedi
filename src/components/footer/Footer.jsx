@@ -10,12 +10,12 @@ import Link from 'next/link';
 function Footer() {
   return (
     <div className={styles.footer}>
+        <div className={styles.copyright}>Ⓒ2023 Pallavi Dwivedi.</div>
         <div className={styles.icons}>
           <Link href={"/"}><LinkedInIcon/> </Link>
           <Link href={"/"}><GitHubIcon/> </Link>
           <Link href={"/"}><InstagramIcon/> </Link>
         </div>
-        <div className={styles.copyright}>Ⓒ2023 PD. All rights reserved.</div>
     </div>
   )
 }

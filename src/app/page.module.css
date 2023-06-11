@@ -3,19 +3,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
 }
 
 .heading p{
-    color: blue;
+    color: #1f199e;
     font-size: 20px;
 }
 
 .heading h1{
-    color: aqua;
+    color: #4744FF;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 5px 2px 5px rgba(71, 70, 90, 0.65);}
+
+.heading h3{
+    color: #6e68dd;
+    font-size: 30px;
+    /* font-weight: bolder; */
 }
 
 .container .image{
-    border: 3px dotted #9336B4;
+    border: 3px solid #1f199e;
     border-radius: 50%;
 }
