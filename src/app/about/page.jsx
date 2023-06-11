@@ -11,7 +11,15 @@ function About() {
       <div className={styles.container}>
         <h2 className={heading.className}>About Me</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta animi quos facere et quae, nesciunt consequatur maxime officia minima magnam rem dolorum perspiciatis consectetur eius possimus magni a tempore voluptatum debitis, fugiat dolor fugit. Sunt, sed. Deleniti qui laudantium pariatur, fugit nam non quia numquam cupiditate ipsam recusandae aperiam dolorum. Recusandae incidunt in sunt nemo placeat eveniet velit, iure magnam. Consequuntur ipsa autem commodi molestiae, atque magnam quas inventore nostrum.
+        Computer Science and Engineering graduate with expertise in web development and programming.
+        <br/>Skilled in HTML, CSS, JavaScript, React.js, and Next.js. 
+        <br/>Familiar with MUI, Bootstrap, and Highcharts.
+        <br/>Cleared GATE Exam in 2023.
+        <br/>Experienced in designing front-end applications. 
+        <br/>Completed internship in web development. 
+        <br/>Passionate about creating user-friendly websites and contributing to innovative projects. 
+        <br/>Open to exciting opportunities and collaborations. 
+        <br/>Let's connect!
         </p>
       </div>
     </section>
