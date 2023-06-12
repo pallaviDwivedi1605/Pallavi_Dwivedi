@@ -1,3 +1,57 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add this class to animate the home_section */
+.contact_section {
+  animation: slideIn 0.8s ease forwards;
+}
+
 .container{
-    height: 500px;
+  margin: 30px auto;
+  background-color: #fff;
+  position: relative;
+  width: 45vw;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form{
+  position: absolute;
+  right: 0;
+}
+
+.info{
+  position: absolute;
+  left: -185px;
+  top: 110px;
+  height: 300px;
+  width: 300px;
+  background-color: #464343;
+  padding-inline: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.info ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 20px;
+}
+
+.info li{
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }

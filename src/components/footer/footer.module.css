@@ -4,12 +4,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #99c1db;
     padding: 0 200px;
+    box-shadow: 0px -5px 10px #2e2e2e25;
 }
 
 .footer .copyright{
-    color: #5f5e5e;
+    color: #292828;
     font-size: 15px;
     padding: 5px;
 }
@@ -17,10 +17,22 @@
 .footer .icons{
     display: flex;
     gap: 20px;
-    color: #5f5e5e;
+    color: #292828;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.footer .icons:hover{
-    color: #1b1b1b;
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .icon:hover{
+    background-color: #292828;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px #2e2e2e;
 }

@@ -1,3 +1,21 @@
+/* Add this animation class */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Add this class to animate the home_section */
+  .home_section {
+    animation: slideIn 0.8s ease forwards;
+  }
+  
+
 .main{
     display: flex;
     flex-direction: column;
@@ -11,6 +29,13 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
 }
 
 .heading p{
@@ -44,4 +69,27 @@
     border-style: dotted;
     border-color: #a7a5a5;
     margin: 0 auto;
+}
+
+.heading div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: #4744FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 0;;
+    width: 130px;
+    color: #d3d0d0;
+    font-size: 20px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 10px #5c5b5bc7;
+    font-weight: 700;
 }

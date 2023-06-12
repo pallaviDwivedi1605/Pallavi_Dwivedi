@@ -11,10 +11,10 @@ function Footer() {
   return (
     <div className={styles.footer}>
         <div className={styles.copyright}>Ⓒ2023 Pallavi Dwivedi.</div>
-        <div className={styles.icons}>
-          <Link href={"/"}><LinkedInIcon/> </Link>
-          <Link href={"/"}><GitHubIcon/> </Link>
-          <Link href={"/"}><InstagramIcon/> </Link>
+        <div className={styles.icons} >
+          <Link className={styles.icon} href={"https://www.linkedin.com/in/pallavidwivedi/"} target='_blank'><LinkedInIcon/> </Link>
+          <Link className={styles.icon} href={"https://github.com/pallaviDwivedi1605"} target='_blank'><GitHubIcon/> </Link>
+          <Link className={styles.icon} href={"/"} target='_blank'><InstagramIcon/> </Link>
         </div>
     </div>
   )

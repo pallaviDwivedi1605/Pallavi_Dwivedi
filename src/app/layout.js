@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
         <div>
           <Navbar />
           <main className="container">{children}</main>
+          <div className="overlay"></div>
           <Footer />
         </div>
       </body>

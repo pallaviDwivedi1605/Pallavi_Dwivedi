@@ -1,3 +1,22 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add this class to animate the home_section */
+.project_section {
+  animation: slideIn 0.8s ease forwards;
+}
+  
+
+/* page css */
+
 .container{
     height: 80vh;
     width: 70vw;
@@ -29,9 +48,7 @@ transition: transform 0.5s ease-in-out;
 cursor: pointer;
 }
 
-.card_list div {
-transition: transform 0.5s ease-in-out;
-}
+
 
 /* heading */
 
@@ -51,8 +68,8 @@ transition: transform 0.5s ease-in-out;
 
 
 @keyframes example {
-  from {font-size: 40px; color: #000; text-shadow: 5px 5px 10px #333232c2;}
-  to {font-size: 50px; color: #fff; text-shadow: 5px 5px 10px #333232c2;}
+  from {font-size: 40px;}
+  to {font-size: 50px;}
 }  
 
 

@@ -7,7 +7,7 @@ const heading = Titan_One({ subsets: ["latin"], weight: "400" });
 
 function About() {
   return (
-    <section id="about-section">
+    <section className={styles.about_section}>
       <div className={styles.container}>
         <h2 className={heading.className}>About Me</h2>
         <p>

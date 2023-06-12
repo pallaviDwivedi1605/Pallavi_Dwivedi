@@ -1,6 +1,20 @@
-#about-section{
-   height: 100vh;
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+/* Add this class to animate the home_section */
+.about_section {
+  animation: slideIn 0.8s ease forwards;
+}
+
+
 .container{
    height: 400px;
    width: 700px;

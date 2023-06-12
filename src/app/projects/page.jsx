@@ -75,32 +75,33 @@ function Project() {
   };
 
   return (
-    <section id="project-section">
-      <div className={styles.container}>
-        <h2 className={`${styles.heading} ${heading.className}`}>My Work</h2>
-        <div className={styles.carousel}>
-          <Link className={styles.arrow} href={'/projects'} onClick={moveBackward}>
-          <IconButton><KeyboardDoubleArrowLeftIcon/></IconButton>
-          </Link>
+      <section className={styles.project_section}>
+        <div className={styles.container}>
+          <h2 className={`${styles.heading} ${heading.className}`}>My Work</h2>
+          <div className={styles.carousel}>
+            <Link className={styles.arrow} href={'/projects'} onClick={moveBackward}>
+            <IconButton><KeyboardDoubleArrowLeftIcon/></IconButton>
+            </Link>
 
-          <div className={styles.card_list}>
-            <Card
-              key={projectData[imageIndex].id}
-              src={projectData[imageIndex].image}
-              alt={projectData[imageIndex].alt}
-              title={projectData[imageIndex].title}
-              subTitle={projectData[imageIndex].subTitle}
-              desc={projectData[imageIndex].desc}
-              projectLink={projectData[imageIndex].projectLink}
-            />
+            <div className={styles.card_list}>
+              <Card
+                className={styles.card}
+                key={projectData[imageIndex].id}
+                src={projectData[imageIndex].image}
+                alt={projectData[imageIndex].alt}
+                title={projectData[imageIndex].title}
+                subTitle={projectData[imageIndex].subTitle}
+                desc={projectData[imageIndex].desc}
+                projectLink={projectData[imageIndex].projectLink}
+              />
+            </div>
+
+            <Link className={styles.arrow} href={'/projects'} onClick={moveForward}>
+              <IconButton><KeyboardDoubleArrowRightIcon/></IconButton>
+            </Link>
           </div>
-
-          <Link className={styles.arrow} href={'/projects'} onClick={moveForward}>
-            <IconButton><KeyboardDoubleArrowRightIcon/></IconButton>
-          </Link>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }
 

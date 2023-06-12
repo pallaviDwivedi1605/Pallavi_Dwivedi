@@ -8,13 +8,17 @@
 body{
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #95BDFF;
     color: #161616;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
 }
 
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -30,8 +34,9 @@ a{
     min-width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
