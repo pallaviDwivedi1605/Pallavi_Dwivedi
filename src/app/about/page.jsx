@@ -19,7 +19,7 @@ function About() {
         <br/>Completed internship in web development. 
         <br/>Passionate about creating user-friendly websites and contributing to innovative projects. 
         <br/>Open to exciting opportunities and collaborations. 
-        <br/>Let's connect!
+        <br/>Let&apos;s connect!
         </p>
       </div>
     </section>
