@@ -1,9 +1,9 @@
 
 .container {
     width: 500px;
-    /* margin: 50px auto; */
     background-color: #ffffff;
-    padding: 40px;
+    padding: 20px 40px;
+    height: fit-content;
 }
 
 .heading {
@@ -12,6 +12,24 @@
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+@keyframes letterWrite {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .heading_animation {
+    animation: letterWrite 2s ease-in forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+
 
 .form_group {
     margin-bottom: 20px;

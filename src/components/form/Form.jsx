@@ -6,7 +6,7 @@ function Form(props) {
 
   return (
     <div className={styles.container}>
-      <h1>Drop Your Message Here.</h1>
+      <h1 className={`${styles.heading} ${styles.heading_animation}`}>Drop Your Message Here.</h1>
       <form onSubmit={props.handleSubmit}>
         <div className={styles.form_group}>
           <label htmlFor="name">Name</label>
@@ -18,7 +18,7 @@ function Form(props) {
         </div>
         <div className={styles.form_group}>
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea rows={10} cols={30} id="message" name="message" required></textarea>
         </div>
         <button type="submit" className={styles.btn}>Send Message</button>
       </form>
