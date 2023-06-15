@@ -48,11 +48,12 @@ export default function Home() {
               </h3>
             )}
             <div>
-              <Link className={styles.btn}  href="#" download="Resume.pdf" target="_blank">Resume</Link>
+              {/* download="Resume.pdf" */}
+              <Link className={styles.btn}  href={"/resume/PallaviResume.pdf"} target="_blank"> Resume</Link>
               <Link className={styles.btn} href={"/contact"}>Contact Me</Link>
             </div>
           </div>
-          <Image className={styles.image} src={Pallavi} width={200} height={200} alt="Pallavi Dwivedi" />
+          <Image className={styles.image} src={Pallavi} width={400} height={600} alt="Pallavi Dwivedi" />
         </div>
       </section>
       <hr className={styles.ruler} />
