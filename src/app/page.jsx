@@ -53,7 +53,7 @@ export default function Home() {
               <Link className={styles.btn} href={"/contact"}>Contact Me</Link>
             </div>
           </div>
-          <Image className={styles.image} src={Pallavi} width={400} height={600} alt="Pallavi Dwivedi" />
+          <Image className={styles.image} src={Pallavi} width={400} height={400} alt="Pallavi Dwivedi" />
         </div>
       </section>
       <hr className={styles.ruler} />
