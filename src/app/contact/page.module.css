@@ -43,6 +43,6 @@
     position: static;
   }
   .info{
-    /* display: none; */
+    display: none;
   }
 }
