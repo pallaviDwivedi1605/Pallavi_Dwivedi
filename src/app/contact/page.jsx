@@ -1,10 +1,8 @@
 "use client"
 import React,{useState} from 'react'
 import styles from "./page.module.css"
-import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Form from '@/components/form/Form';
+import ContactCard from '@/components/contactDetailCard/ContactCard';
 
 
 function Contact() {
@@ -49,13 +47,7 @@ function Contact() {
         <div className={styles.form}>
           <Form handleSubmit={handleSubmit} successMessage={successMessage} />
         </div>
-        <div className={styles.info}>
-          <ul>
-            <li> <CallIcon/> +91-9306098158 </li>
-            <li> <EmailIcon/> dpallavi854@gmail.com </li>
-            <li> <LinkedInIcon/> linkedin.com/in/pallavidwivedi/ </li>
-          </ul>
-        </div>
+        <ContactCard />
       </div>
     </section>
   

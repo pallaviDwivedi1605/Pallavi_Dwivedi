@@ -1,0 +1,29 @@
+.container{
+    height: 400px;
+    width: 700px;
+    background-color: #FFBDF7;
+    margin: 80px auto;
+    padding: 30px 20px;
+    transform: skew(-15deg ,-5deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ }
+ 
+ .container h2{
+    text-align: center;
+    color: #444;
+    font-size: 50px;
+    text-shadow: 
+      1px 0px 1px #ccc, 0px 1px 1px #eee, 
+      2px 1px 1px #ccc, 1px 2px 1px #eee,
+      3px 2px 1px #ccc, 2px 3px 1px #eee,
+      4px 3px 1px #ccc, 3px 4px 1px #eee,
+      5px 4px 1px #ccc, 4px 5px 1px #eee,
+      6px 5px 1px #ccc, 5px 6px 1px #eee,
+      7px 6px 1px #ccc;
+ 
+ }
+ 
+ .container p{
+    color: #181717;
+    margin: 30px 25px;
+ }
