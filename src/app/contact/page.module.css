@@ -17,13 +17,32 @@
 .container{
   margin: 30px auto;
   background-color: #fff;
-  position: relative;
-  width: 45vw;
+  width: 100vw;
   height: 80vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form{
+/* .form{
   position: absolute;
   right: 0;
+}
+
+.info{
+  position: relative;
+} */
+
+@media screen and (max-width: 600px) {
+  .container{
+    height: 100vh;
+    height: auto;
+    margin: 0px;
+    /* background-color: transparent; */
+  }
+  
+  .form{
+    position: static;
+  }
+  .info{
+    /* display: none; */
+  }
 }

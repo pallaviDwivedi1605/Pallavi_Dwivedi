@@ -87,3 +87,9 @@
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+}

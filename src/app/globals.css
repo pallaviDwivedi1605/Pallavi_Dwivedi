@@ -26,17 +26,13 @@ ul{
   }
   
   ::-webkit-scrollbar-thumb {
-    background: gray;
+    background: rgb(146, 145, 145);
     border-radius: 10px;
   }
+
 
 .container{
     min-width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-
-

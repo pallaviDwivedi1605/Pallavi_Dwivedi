@@ -47,7 +47,9 @@ function Contact() {
         <div className={styles.form}>
           <Form handleSubmit={handleSubmit} successMessage={successMessage} />
         </div>
-        <ContactCard />
+        <div className={styles.info}>
+          <ContactCard />
+        </div>
       </div>
     </section>
   

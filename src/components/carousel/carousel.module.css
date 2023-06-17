@@ -9,14 +9,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     background-color: #fcfbfb;
     border-radius: 30px;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-
-.card_list{
-    display: flex;
-    gap: 5px;
 }
   
 .carousel {
@@ -27,16 +23,9 @@ gap: 50px;
 transition: transform 0.5s ease-in-out; 
 }
 
-.arrow:hover {
-cursor: pointer;
-}
-
-
-
 /* heading */
 
 .container .heading {
-    position: sticky;
 	font-size: 40px;
     color: #000;
     padding: 20px;
@@ -55,5 +44,30 @@ cursor: pointer;
   to {font-size: 50px;}
 }  
 
+@media screen and (max-width: 600px) {
+    .container{
+        height: 70vh;
+        width: 100vw;
+        margin-top: 70px;
+        gap: 35px;
+        box-shadow: none;
+    }
 
+    .container .heading {
+        padding: 0;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card_list{
+        width: 250px;
+        overflow: hidden;
+        object-fit: contain;
+    }
+}
 

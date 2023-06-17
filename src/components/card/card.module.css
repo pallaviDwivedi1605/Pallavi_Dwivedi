@@ -26,13 +26,13 @@
     transition: height 0.5s;
   }
   
-  .card__thumb img {
+  /* .card__thumb img {
     width: 100%;
     display: block;
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.5s, transform 0.5s;
-  }
+  } */
   
   .card:hover .card__thumb {
     height: 130px;

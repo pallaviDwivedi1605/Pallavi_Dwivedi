@@ -17,11 +17,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body className={text.className}>
-        <div>
-          <Navbar />
+        <div className="main">
+          <header>
+            <Navbar />
+          </header>
           <main className="container">{children}</main>
-          <div className="overlay"></div>
-          <Footer />
+          <footer>
+            <Footer />
+          </footer>
         </div>
       </body>
     </html>
