@@ -33,6 +33,9 @@ ul{
 
 .container{
     min-width: 100vw;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0 auto;
+}
+
+@media screen and (max-width:600px) {
 }

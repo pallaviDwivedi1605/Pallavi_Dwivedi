@@ -44,11 +44,11 @@ function Contact() {
   return (
     <section className={styles.contact_section}>
       <div className={styles.container}>
-        <div className={styles.form}>
-          <Form handleSubmit={handleSubmit} successMessage={successMessage} />
-        </div>
         <div className={styles.info}>
           <ContactCard />
+        </div>
+        <div className={styles.form}>
+          <Form handleSubmit={handleSubmit} successMessage={successMessage} />
         </div>
       </div>
     </section>

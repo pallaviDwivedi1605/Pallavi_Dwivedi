@@ -3,8 +3,7 @@
 .container{
     height: 80vh;
     width: 70vw;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
