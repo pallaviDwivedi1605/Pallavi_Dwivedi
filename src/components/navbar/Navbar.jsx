@@ -4,9 +4,11 @@ import Link from 'next/link';
 import styles from './navbar.module.css';
 import Logo from 'public/logo/favicon-32x32.png';
 import Image from 'next/image';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState(null);
+  const [openMenu, setOpenMenu] = useState(false)
 
   const links = [
     {
@@ -43,9 +45,35 @@ function Navbar() {
     // });
   };
 
+  const handleMenuBtnClick = () => {
+   setOpenMenu(!openMenu);
+  }
+
+  const handleNavItemClick = () => {
+    setOpenMenu(false);
+  };
+
   return (
     <div className={styles.navbar}>
       <Image src={Logo} alt="PD logo" width={32} height={32} />
+      <div className={styles.menu_btn} onClick={handleMenuBtnClick} > <MenuIcon /> </div>
+      {openMenu && <div className={`${styles.small_menu} ${openMenu ? styles.small_menu_slide_in : ''}`}>
+        {links.map((link) => (
+          <Link
+            className={`${styles.nav_item} ${
+              activeLink === link.section ? styles.active : ''
+            }`}
+            key={link.id}
+            href={link.url}
+            onClick={() => {
+              handleNavItemClick();
+              handleMenuClick(link.section);
+            }}
+          >
+            {link.title}
+          </Link>
+        ))}
+        </div>}
       <div className={styles.nav_menu}>
         {links.map((link) => (
           <Link
