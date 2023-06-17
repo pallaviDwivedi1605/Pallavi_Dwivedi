@@ -1,0 +1,112 @@
+.container{
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 70px;
+}
+
+.heading{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 5px;
+}
+
+.heading p{
+color: #1f199e;
+font-size: 20px;
+}
+
+.heading h1{
+color: #4744FF;
+text-align: center;
+font-size: 50px;
+font-weight: bolder;
+text-shadow: 5px 2px 5px rgba(71, 70, 90, 0.65);}
+
+.heading h3{
+color: #6e68dd;
+font-size: 30px;
+}
+
+.container .image{
+border: 3px solid #1f199e;
+border-radius: 50%;
+}
+
+.heading div{
+display: flex;
+align-items: flex-end;
+justify-content: space-evenly;
+width: 80%;
+margin-top: 30px;
+}
+
+@keyframes letterWrite {
+0% {
+    width: 0;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 0;
+}
+}
+
+@keyframes letterErase {
+0% {
+    width: 100%;
+}
+50% {
+    width: 0;
+}
+100% {
+    width: 0;
+}
+}
+
+.letter_animation {
+animation: letterWrite 2s linear infinite;
+overflow: hidden;
+white-space: nowrap;
+display: inline-block;
+}
+
+.letter_erase_animation {
+animation: letterErase 2s linear infinite;
+overflow: hidden;
+white-space: nowrap;
+display: inline-block;
+}
+
+
+.btn{
+background-color: #4744FF;
+border-radius: 10px;
+text-align: center;
+padding: 8px 0;;
+width: 130px;
+color: #d3d0d0;
+font-size: 20px;
+}
+
+.btn:hover{
+box-shadow: 0px 0px 10px #5c5b5bc7;
+font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+ .container{
+    flex-direction: column-reverse;
+    /* height: 100vh; */
+ }
+ .heading{
+    align-items: center;
+ }
+ .heading h3{
+    text-align: center;
+ }
+}

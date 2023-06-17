@@ -1,14 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import styles from './page.module.css';
-import Card from '@/components/card/Card';
-import Link from 'next/link';
-import { IconButton } from '@mui/material';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import {Yeseva_One} from "next/font/google";
+import Carousel from '@/components/carousel/Carousel';
 
-const heading = Yeseva_One({ subsets: ["latin"], weight: "400" });
 
 function Project() {
   const projectData = [
@@ -64,43 +58,11 @@ function Project() {
     },
   ];
 
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const moveForward = () => {
-    setImageIndex((prevIndex) => (prevIndex + 1) % projectData.length);
-  };
-
-  const moveBackward = () => {
-    setImageIndex((prevIndex) => (prevIndex - 1 + projectData.length) % projectData.length);
-  };
+ 
 
   return (
       <section className={styles.project_section}>
-        <div className={styles.container}>
-          <h2 className={`${styles.heading} ${heading.className}`}>My Work</h2>
-          <div className={styles.carousel}>
-            <Link className={styles.arrow} href={'/projects'} onClick={moveBackward}>
-            <IconButton><KeyboardDoubleArrowLeftIcon/></IconButton>
-            </Link>
-
-            <div className={styles.card_list}>
-              <Card
-                className={styles.card}
-                key={projectData[imageIndex].id}
-                src={projectData[imageIndex].image}
-                alt={projectData[imageIndex].alt}
-                title={projectData[imageIndex].title}
-                subTitle={projectData[imageIndex].subTitle}
-                desc={projectData[imageIndex].desc}
-                projectLink={projectData[imageIndex].projectLink}
-              />
-            </div>
-
-            <Link className={styles.arrow} href={'/projects'} onClick={moveForward}>
-              <IconButton><KeyboardDoubleArrowRightIcon/></IconButton>
-            </Link>
-          </div>
-        </div>
+        <Carousel array={projectData} />
       </section>
   );
 }
