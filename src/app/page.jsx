@@ -8,6 +8,7 @@ import Project from "./projects/page";
 import Contact from "./contact/page";
 import { Abril_Fatface, Josefin_Sans } from "next/font/google";
 import Link from "next/link";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 const headingFont = Abril_Fatface({subsets: ['latin'],weight: '400'})
 const pFont = Josefin_Sans({subsets: ['latin'],weight: '400'})
@@ -48,19 +49,19 @@ export default function Home() {
               </h3>
             )}
             <div>
-              <Link className={styles.btn}  href="#" download="Resume.pdf" target="_blank">Resume</Link>
+              <Link className={styles.btn}  href="#" download="Resume.pdf" target="_blank">Resume <LaunchIcon/></Link>
               <Link className={styles.btn} href={"/contact"}>Contact Me</Link>
             </div>
           </div>
           <Image className={styles.image} src={Pallavi} width={200} height={200} alt="Pallavi Dwivedi" />
         </div>
       </section>
-      <hr className={styles.ruler} />
+      {/* <hr className={styles.ruler} />
       <About/>
       <hr className={styles.ruler} />
       <Project/>
       <hr className={styles.ruler} />
-      <Contact/>
+      <Contact/> */}
     </div>
   )
   ;

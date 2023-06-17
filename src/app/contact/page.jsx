@@ -15,26 +15,33 @@ function Contact() {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-
+  
     try {
-      const response = await fetch('/api/sendEmail', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-
+  
       if (response.ok) {
-        setSuccessMessage('Message sent successfully!');
-        e.target.reset();
+        const responseData = await response.json();
+  
+        if (responseData.message) {
+          setSuccessMessage(responseData.message);
+          e.target.reset();
+        } else {
+          throw new Error('Failed to send email.');
+        }
       } else {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to send email.');
+        throw new Error('Failed to send email.');
       }
     } catch (error) {
       console.error(error);
       setSuccessMessage('');
     }
   };
+  
+
 
   return (
     <section className={styles.contact_section}>
