@@ -44,7 +44,14 @@ function HomeSection() {
               </h3>
             )}
             <div>
-              <Link className={styles.btn}  href="/PALLAVI_DWIVEDI.PDF" download="Resume.pdf" target="_blank">Resume <LaunchIcon/></Link>
+            <a
+              className={styles.btn}
+              href="/PALLAVI_DWIVEDI.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Download FIle</a>
+              {/* <Link className={styles.btn}  href="/PALLAVI_DWIVEDI.PDF" download="Resume.pdf" target="_blank">Resume <LaunchIcon/></Link> */}
               <Link className={styles.btn} href={"/contact"}>Contact Me</Link>
             </div>
           </div>
