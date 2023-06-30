@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styles from './carousel.module.css'
-import Card from '@/components/newCard/Card';
+import Card from '@/components/card/Card';
 import Link from 'next/link';
 import { IconButton } from '@mui/material';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -51,6 +51,3 @@ function Carousel(props) {
 }
 
 export default Carousel
-
-
-
