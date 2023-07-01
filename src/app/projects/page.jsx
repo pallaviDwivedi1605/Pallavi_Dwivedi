@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import styles from './page.module.css';
-import Carousel from '@/components/carousel/Carousel';
+import MyCarousel from '@/components/carousel/MyCarousel';
 
 
 function Project() {
@@ -57,10 +57,9 @@ function Project() {
 
   return (
       <section className={styles.project_section}>
-        <Carousel array={projectData} />
+        <MyCarousel array={projectData} />
       </section>
   );
 }
 
 export default Project;
-4
