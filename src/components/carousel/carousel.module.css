@@ -56,4 +56,8 @@
         gap: 50px;
         box-shadow: none;
     }
+    
+.carousel_box{
+    max-width: 250px;
+}
 }
