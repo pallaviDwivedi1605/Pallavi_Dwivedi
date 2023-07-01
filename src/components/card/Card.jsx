@@ -14,9 +14,10 @@ function Card(props) {
         <div className={styles.card__body}>
             <h2 className={styles.card__title}><a href="#">{props.title}</a></h2>
             <div className={styles.card__subtitle}>{props.subTitle}</div>
-            <p className={styles.card__description}>
+            {/* <p className={styles.card__description}>
                 {props.desc}
-            </p>
+            </p> */}
+            <Link className={styles.btn} href={props.projectLink} target='_blank'>Visit Project</Link>
         </div>   
     </div>
   )

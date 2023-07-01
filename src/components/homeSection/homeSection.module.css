@@ -91,10 +91,11 @@ padding: 8px 0;;
 width: 130px;
 color: #d3d0d0;
 font-size: 20px;
+box-shadow: 2px 3px 10px #00000063;
 }
 
 .btn:hover{
-box-shadow: 0px 0px 10px #5c5b5bc7;
+    box-shadow: -2px -3px 10px #00000063;
 font-weight: 700;
 }
 
