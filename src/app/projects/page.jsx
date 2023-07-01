@@ -31,7 +31,7 @@ function Project() {
       projectLink: 'https://pallavidwivedi1605.github.io/Simon/',
       title: 'Simon',
       subTitle: 'HTML | CSS | Jquery',
-      desc: 'Created an interactive Game, allowing users to play and experiment with buttons and check their memorizing power. Implemented responsive buttons and sound effects, to enhance user engagement. It will engage you in game because your goal will be to memorize the previous pattern',
+      desc: 'Created an interactive Game, allowing users to play and experiment with buttons and check their memorizing power. Implemented responsive buttons and sound effects, to enhance user engagement. It will engage you in game because your goal will be to memorize the previous pattern.',
     },
     {
       id: 4,
