@@ -127,8 +127,5 @@
   .card:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
-  .card:hover .card__thumb {
-    height: 100px;
-  }
  
 }
