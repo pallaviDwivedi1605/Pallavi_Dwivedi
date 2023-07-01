@@ -8,7 +8,10 @@ function Card(props) {
     <div className={styles.card}>
         <header className={styles.card__thumb}>
             <Link href={props.projectLink} target='_blank'>
-                <Image src={props.src} alt={props.alt} width={350} height={245} />
+            <div className={'image-container'}>
+            <Image src={props.src} alt={props.alt} layout="fill" className={'image'} />
+            </div>
+                {/* <Image src={props.src} alt={props.alt} width={350} height={245} /> */}
             </Link>
         </header>
         <div className={styles.card__body}>

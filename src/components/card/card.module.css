@@ -30,9 +30,23 @@
   height: 130px;
 }
 
-.card:hover .card__thumb img {
+.card:hover .card__thumb .image {
   opacity: 0.6;
   transform: scale(1.2);
+}
+
+.image-container {
+
+  width: 100%;
+  position: unset !important;
+  
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
 }
 
 .card__body {
