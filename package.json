@@ -24,7 +24,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14"

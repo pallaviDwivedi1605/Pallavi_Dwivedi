@@ -26,10 +26,10 @@ font-size: 50px;
 font-weight: bolder;
 text-shadow: 5px 2px 5px rgba(71, 70, 90, 0.65);}
 
-.heading h3{
+/* .heading h3{
 color: #6e68dd;
 font-size: 30px;
-}
+} */
 
 .container .image{
 border: 3px solid #1f199e;
@@ -43,45 +43,6 @@ justify-content: space-evenly;
 width: 80%;
 margin-top: 30px;
 }
-
-@keyframes letterWrite {
-0% {
-    width: 0;
-}
-50% {
-    width: 100%;
-}
-100% {
-    width: 0;
-}
-}
-
-@keyframes letterErase {
-0% {
-    width: 100%;
-}
-50% {
-    width: 0;
-}
-100% {
-    width: 0;
-}
-}
-
-.letter_animation {
-animation: letterWrite 2s linear infinite;
-overflow: hidden;
-white-space: nowrap;
-display: inline-block;
-}
-
-.letter_erase_animation {
-animation: letterErase 2s linear infinite;
-overflow: hidden;
-white-space: nowrap;
-display: inline-block;
-}
-
 
 .btn{
 background-color: #4744FF;
