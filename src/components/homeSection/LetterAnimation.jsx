@@ -26,7 +26,7 @@ const LetterAnimation = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % strings.length);
           }
         }
-      }, 150); // Adjust the interval time (in milliseconds) for typing speed
+      }, 130); // Adjust the interval time (in milliseconds) for typing speed
   
       return () => {
         clearInterval(intervalId);
@@ -34,12 +34,10 @@ const LetterAnimation = () => {
     }, [currentIndex, currentText, isTypingComplete]);
   
     return (
-      <div className={styles.container}>
         <p className={`${headingFont.className} ${styles.text}`}>
-            {/* <span style={{color: "#6e68dd", fontSize: "20px"}}>I'm a </span> */}
+            <span style={{paddingRight:"5px"}}>I'm a</span>
             {currentText}
         </p>
-      </div>
     );
   };
 

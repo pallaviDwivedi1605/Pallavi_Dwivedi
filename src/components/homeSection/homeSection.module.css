@@ -14,7 +14,7 @@ justify-content: center;
 gap: 5px;
 }
 
-.heading p{
+.heading .label{
 color: #1f199e;
 font-size: 20px;
 }

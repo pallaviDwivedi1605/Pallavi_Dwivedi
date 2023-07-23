@@ -6,12 +6,14 @@
     }
   }
   
-  .container .text {
+  .text {
       color: #6e68dd;
       font-size: 30px;
-      border-right: 2px solid #6e68dd; /* This will create a cursor effect */
-      white-space: nowrap;
+      padding-right: 2px;
+      border-right: 2px solid #6e68dd;
+      white-space: normal;
       overflow: hidden;
+      height: 40px;
       animation: typing 1s steps(40, end), blink-caret 0.5s step-end infinite;
   }
   

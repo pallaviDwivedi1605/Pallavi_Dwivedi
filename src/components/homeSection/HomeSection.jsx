@@ -16,7 +16,7 @@ function HomeSection() {
   return (
     <div className={styles.container}>
           <div className={styles.heading}>
-            <p className={pFont.className}>Hey! My name is</p>
+            <p className={`${pFont.className} ${styles.label}`}>Hey! My name is</p>
             <h1 className={headingFont.className}>PALLAVI DWIVEDI.</h1>
             <LetterAnimation />
             <div>
