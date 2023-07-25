@@ -33,6 +33,8 @@ const LetterAnimation = () => {
       };
     }, [currentIndex, currentText, isTypingComplete]);
   
+
+    // fixed type writter
     return (
         <p className={`${headingFont.className} ${styles.text}`}>
             <span style={{paddingRight:"5px"}}>I'm a</span>
