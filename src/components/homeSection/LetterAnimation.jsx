@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './letterAnimation.module.css';
-import { Abril_Fatface, Josefin_Sans } from "next/font/google";
+import { Abril_Fatface } from "next/font/google";
 
 
 const headingFont = Abril_Fatface({subsets: ['latin'],weight: '400'})
@@ -37,7 +37,7 @@ const LetterAnimation = () => {
     // fixed type writter
     return (
         <p className={`${headingFont.className} ${styles.text}`}>
-            <span style={{paddingRight:"5px"}}>I'm a</span>
+            <span style={{paddingRight:"5px"}}>I&apos;m a</span>
             {currentText}
         </p>
     );
