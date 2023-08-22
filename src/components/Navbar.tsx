@@ -32,7 +32,7 @@ const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-  <nav className=" bg-white md: m-6 flex justify-evenly items-center fixed w-screen">
+  <nav className=" bg-red-600 md: m-6 flex justify-evenly items-center fixed w-screen">
     <h1>PD</h1>
     <div className="md:flex justify-center items-center gap-10">
       {NavLinkData.map((obj) => (

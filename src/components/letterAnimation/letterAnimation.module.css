@@ -8,10 +8,9 @@
   }
   
   .text {
-      color: #6e68dd;
+      color: rgb(248, 76, 13);
       font-size: 30px;
       padding-right: 2px;
-      border-right: 2px solid #6e68dd;
       white-space: normal;
       overflow: hidden;
       height: 40px;

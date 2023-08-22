@@ -8,7 +8,8 @@ import Image from "next/image";
 
 const headingFont = Abril_Fatface({subsets: ['latin'],weight: '400'})
 const Home = () => {
-  return <div className=" bg-white p-10 flex">
+  return (
+  <div className=" bg-white pt-20 flex justify-center items-center h-screen w-screen">
     <div>
       <p>Hey! My name is</p>
       <h1 className={headingFont.className}>PALLAVI DWIVEDI.</h1>
@@ -22,7 +23,7 @@ const Home = () => {
       </div>
     </div>
     <Image src={"/images/character.svg"} width={200} height={200} alt="Pallavi Dwivedi" />
-     </div>;
+  </div>);
 };
 
 export default Home;
