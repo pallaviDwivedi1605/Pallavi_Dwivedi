@@ -1,8 +1,8 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Home from "@/components/Home";
-import Project from "@/components/Project";
-import Skill from "@/components/Skill";
+import About from "@/src/components/About";
+import Contact from "@/src/components/Contact";
+import Home from "@/src/components/Home";
+import Project from "@/src/components/Project";
+import Skill from "@/src/components/Skill";
 
 export default function Index() {
   return (
