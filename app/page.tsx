@@ -1,29 +1,29 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
+import Home from "@/components/Home";
 import Project from "@/components/Project";
 import Skill from "@/components/Skill";
 
-export default function Home() {
+export default function Index() {
   return (
     <main className=" text-center">
-      <section>
-        <Hero />
+      <section id="home">
+        <Home />
       </section>
 
-      <section>
+      <section id="about">
         <About />
       </section>
 
-      <section>
+      <section id="skills">
         <Skill />
       </section>
 
-      <section>
+      <section id="projects">
         <Project />
       </section>
 
-      <section>
+      <section id="contact">
         <Contact />
       </section>
     </main>
