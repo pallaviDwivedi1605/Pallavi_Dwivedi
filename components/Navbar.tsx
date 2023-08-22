@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-
-import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
+import { HiMenuAlt4 } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,36 +13,51 @@ const NavLinkData = [
   { key: 5, id: "Contact", link: "#contact" },
 ];
 
-// const NavLinks = () => {
-//   return (
-//     <ul className="hidden md:flex gap-16">
-//       {NavLinkData.map((obj) => (
-//         <li
-//           key={obj.key}
-//           className="transition-opacity hover:opacity-100 opacity-80 uppercase text-[14px] flex items-center"
-//         >
-//           <Link href={obj.link}>{obj.id}</Link>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// };
-
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
 
+  const handleMenuClick = () => {
+    setOpen(!open);
+  }
+
   return (
-  <nav className=" bg-red-600 md: m-6 flex justify-evenly items-center fixed w-screen">
-    <h1>PD</h1>
-    <div className="md:flex justify-center items-center gap-10">
-      {NavLinkData.map((obj) => (
-        <Link href={obj.link}  key={obj.key}>
-          {obj.id}
-        </Link>  
-      ))}
+  <nav className=" bg-transparent fixed top-0 w-screen">
+    <div className=" ps-5 pe-7 pt-2 pb-2 flex justify-between items-center">
+      <h1>PD</h1>
+      <div className="hidden md:flex justify-center items-center gap-10">
+        {NavLinkData.map((obj) => (
+          <Link href={obj.link}  key={obj.key}>
+            {obj.id}
+          </Link>  
+        ))}
+      </div>
+      <Link href="/PALLAVI_DWIVEDI.pdf"
+        target="_blank"
+        rel="noopener noreferrer" 
+        className=" hidden p-1 ps-3 pe-3 bg-white rounded-full border-2 border-tangy-orange md:inline"
+      >
+        Download CV
+      </Link>
+      <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
+        <div className={`transition-all duration-300 ${open ? 'transform rotate-90' : ''}`}>
+          {
+            open ? <RxCross2 color="#FF6000" fontSize="25px" /> : <HiMenuAlt4 color="#FF6000" fontSize="25px" />
+          }
+        </div>
+      </div>
     </div>
-    <Link href={"#"} className=" p-1 ps-3 pe-3 bg-white rounded-full border-2 border-orange-500">Download CV</Link>
-   
+    
+    {/* small menu */}
+      {
+        open ?  <div className="bg-white backdrop:blur-md md:hidden">
+        {NavLinkData.map((obj) => (
+          <Link onClick={handleMenuClick} className="block text-right border border-dotted pe-12" href={obj.link}  key={obj.key}>
+            {obj.id}
+          </Link>  
+        ))}
+      </div> : ""
+      }
+  
   </nav>
   );
 };
