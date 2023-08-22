@@ -1,5 +1,5 @@
 {
-  "name": "pd_app",
+  "name": "pallavi-dwivedi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,25 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.4",
-    "@sendgrid/mail": "^7.7.0",
-    "dotenv": "^16.1.4",
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
-    "nodemailer": "^6.9.3",
+    "@types/node": "20.5.1",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-responsive-carousel": "^3.2.23",
-    "react-scroll": "^1.8.9",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
-    "typewriter-effect": "^2.20.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14"
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   }
 }
