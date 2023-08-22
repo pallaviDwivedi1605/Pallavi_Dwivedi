@@ -6,7 +6,7 @@ import Skill from "@/components/Skill";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=" text-center">
       <section>
         <Hero />
       </section>
