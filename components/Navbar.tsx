@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className="border fixed top-0 z-50 w-full bg-opacity-50 backdrop-filter backdrop-blur-md">
       <div className="flex px-6 py-3 justify-between md:justify-around">
-        <Image
+        {/* <Image
           src={"/logo.svg"}
           alt="logo"
           height={120}
@@ -41,7 +41,7 @@ const Navbar = () => {
           className="scale-150 outline hover:outline-offset-4 mix-blend-multiply
 
 "
-        />
+        /> */}
         <button
           className="block md:hidden"
           onClick={() => {
