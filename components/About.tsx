@@ -13,7 +13,7 @@ const About = () => {
     {/* text div */}
     <div className="flex flex-col justify-start gap-4">
       <h3 className="text-left text-3xl font-bold text-primary tracking-wide">Who I Am?</h3>
-      <p className="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis maxime error doloremque molestiae sapiente incidunt, porro perferendis possimus! Sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic dicta assumenda similique soluta voluptatum doloremque laudantium repudiandae nostrum totam!</p>
+      <p className="text-left md:mb-6">I'm a Computer Science and Engineering graduate, specializing in web development and programming. Proficient in HTML, CSS, JavaScript, React.js, and Next.js, I bring skills in creating user-friendly web applications. GATE Exam 2023 qualifier with internship experience in web development. Excited about innovative projects and open to new opportunities. Let's connect and collaborate!</p>
       <div className="flex flex-col gap-10 justify-center items-center md:flex-row">
         {
           cardData.map((obj)=><FlipCard key={obj.id} name={obj.name} desc={obj.desc} skill={obj.skill} image={obj.url} />)
