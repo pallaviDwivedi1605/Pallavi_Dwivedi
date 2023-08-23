@@ -22,11 +22,11 @@ const Navbar = () => {
 
   return (
   <nav className=" bg-transparent fixed top-0 w-screen">
-    <div className=" ps-5 pe-7 pt-2 pb-2 flex justify-between items-center">
+    <div className=" ps-5 pe-7 pt-2 mt-4 pb-2 flex justify-between items-center">
       <h1>PD</h1>
       <div className="hidden md:flex justify-center items-center gap-10">
         {NavLinkData.map((obj) => (
-          <Link href={obj.link}  key={obj.key}>
+          <Link href={obj.link}  key={obj.key} className=" transition-all duration-300 hover:tracking-widest hover:text-tangy-orange focus:font-semibold focus:text-lg focus:text-tangy-orange">
             {obj.id}
           </Link>  
         ))}
@@ -34,7 +34,7 @@ const Navbar = () => {
       <Link href="/PALLAVI_DWIVEDI.pdf"
         target="_blank"
         rel="noopener noreferrer" 
-        className=" hidden p-1 ps-3 pe-3 bg-white rounded-full border-2 border-tangy-orange md:inline"
+        className=" hidden p-1 ps-3 pe-3 bg-tangy-orange text-white rounded-lg border-2 border-orange-500 md:inline"
       >
         Download CV
       </Link>
@@ -49,9 +49,9 @@ const Navbar = () => {
     
     {/* small menu */}
       {
-        open ?  <div className="bg-white backdrop:blur-md md:hidden">
+        open ?  <div className="bg-white bg-opacity-10 flex flex-col  md:hidden">
         {NavLinkData.map((obj) => (
-          <Link onClick={handleMenuClick} className="block text-right border border-dotted pe-12" href={obj.link}  key={obj.key}>
+          <Link onClick={handleMenuClick} className=" transition-all duration-300 text-right border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-tangy-orange" href={obj.link}  key={obj.key}>
             {obj.id}
           </Link>  
         ))}
@@ -63,46 +63,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-{/* <div className="border fixed top-0 z-50 w-full bg-opacity-50 backdrop-filter backdrop-blur-md">
-<div className="flex px-6 py-3 justify-between md:justify-around">
-  {/* <Image
-    src={"/logo.svg"}
-    alt="logo"
-    height={120}
-    width={120}
-    className="scale-150 outline hover:outline-offset-4 mix-blend-multiply
-
-"
-  /> *}
-  <button
-    className="block md:hidden"
-    onClick={() => {
-      setOpen(!open);
-    }}
-  >
-    {open ? <RxCross2 /> : <RxHamburgerMenu />}
-  </button>
-  <NavLinks />
-</div>
-{open ? (
-  <div className="block md:hidden">
-    <ul onClick={() => setOpen(!open)} className="">
-      {NavLinkData.map((obj) => (
-        <li
-          key={obj.key}
-          className="pl-10 py-2 border border-dotted active:bg-slate-200            "
-        >
-          <a href={obj.link} className="">
-            {obj.id}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-) : (
-  ""
-)}
-</div> */}
