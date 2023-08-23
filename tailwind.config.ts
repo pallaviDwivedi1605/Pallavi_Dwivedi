@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-          "tangy-orange": "#FF6000",
-          "dull-orange": "#FFE17B",
+          "primary": "rgba(255,0,65,1)"
          
       },
+      borderColor:{
+        "primary": "rgba(255,0,65,1)"
+      },
       textColor:{
-          "tangy-orange": "#FF6000",
+          "primary": "rgba(255,0,65,1)"
+          
       },
       backgroundImage:{
          'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,39 +1,54 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { IoMdCall } from 'react-icons/io'
-import { HiOutlineArrowSmRight, HiMail, HiMailOpen } from 'react-icons/hi'
+import { HiMail, HiExternalLink } from 'react-icons/hi'
+import { IoLogoGithub,IoLogoLinkedin } from 'react-icons/io'
 import { PiArrowRightFill } from 'react-icons/pi'
 import { Abril_Fatface } from "next/font/google";
+import Image from "next/image";
+import Iconn from "./utils/Iconn";
 
 
 
 const headingFont = Abril_Fatface({subsets: ['latin'],weight: '400'})
 const Home = () => {
   return (
-  <div className=" bg-dull-orange h-full w-full pt-24 flex flex-col-reverse md:flex-row gap-10 md:ps-10 md:pe-10 ">
+  <div className=" h-full w-full pt-24 pb-10 mt-4 flex ps-6 pe-6 gap-20 flex-col md:flex-row md:ps-16 md:pe-14 ">
    
     {/* text div */}
-    <div className=" h-1/2 pt-16 ps-8 pe-4 bg-white md:bg-inherit md:h-max md:w-1/2">
-      <h1 className=" font-bold text-3xl text-left pb-3 text-tangy-orange">Pallavi Dwivedi</h1>
-      <p className=" font-extrabold text-4xl text-left pb-5"> A Web Developer.</p>
-      <p className=" font-medium text-gray-600 text-lg text-left pb-8">I will tell you how i can best help you to make your product successful.</p>
-      <div className="flex gap-3 h-nax">
-        <Link href="/PALLAVI_DWIVEDI.pdf"
-        target="_blank"
-        rel="noopener noreferrer"  className="flex items-center text-white bg-tangy-orange rounded-lg gap-3 tracking-wide font-semibold ps-4 text-xl">Resume<div className=" bg-gradient-to-r from-orange-300 to-orange-500 ps-4 pe-4 pt-4 pb-4 rounded-r-lg"><PiArrowRightFill color="#fff" fontSize="25px" /></div></Link>
-        <Link href={"#contact"} className="flex items-center bg-white text-tangy-orange rounded-lg ps-4 pe-4 gap-3 tracking-wide font-semibold text-xl md:bg-inherit"><div className=" bg-tangy-orange p-3 rounded-full border-2 border-orange-300"><IoMdCall color="#fff" fontSize="20px" /></div>Hire Me</Link>
+    <div className=" h-full w-auto flex flex-col justify-center items-center md:items-start md:justify-between">
+      <div className=" flex min-w-full flex-col gap-4 md:pt-16">
+        <p className=" font-medium text-gray-600 text-xs text-left">WELCOME TO MY WORLD</p>
+        <h1 className=" font-bold text-3xl text-left">Hi, I'm <span className=" text-primary">Pallavi Dwivedi</span></h1>
+        <h2 className=" font-extrabold text-4xl text-left"> MERN Developer.</h2>
+        <p className=" font-medium text-gray-600 text-lg text-left">I will tell you how i can best help you to make your product successful.</p>
+        <div className="flex justify-center items-center md:hidden"><Image className=" scale-90 hover:scale-95" src={"/images/girl1.png"} alt={"girl"} width={200} height={400} /></div>
+        {/* link box */}
+        <div className="flex justify-center items-center md:justify-start md:mt-8">
+          <div className="flex gap-2 bg-white rounded-full w-max p-1">
+            <Link href="/PALLAVI_DWIVEDI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"  className=" flex items-center text-white bg-primary rounded-full gap-2 tracking-wide font-semibold ps-4 pe-4 text-lg hover:bg-white hover:text-primary hover:shadow-lg">Resume<HiExternalLink/></Link>
+            <Link href={"#contact"} className="flex items-center bg-white text-primary rounded-full pe-2 gap-3 tracking-wide border font-semibold text-lg md:bg-inherit hover:shadow-lg"><div className=" bg-primary p-2 rounded-full border-2 border-pink-300"><IoMdCall color="#fff" fontSize="20px" /></div>Hire Me</Link>
+          </div>
+        </div>
+      
       </div>
-     
+      <div className="hidden md:flex gap-3">
+        <Link href={"#"} className="p-3 rounded-full transition-all duration-150 bg-white shadow-lg hover:shadow-none hover:scale-110"><IoLogoLinkedin fontSize="20px" /></Link>
+        <Link href={"#"} className="p-3 rounded-full transition-all duration-150 bg-white shadow-lg hover:shadow-none hover:scale-110"><IoLogoGithub fontSize="20px" /></Link>
+        <Link href={"#"} className="p-3 rounded-full transition-all duration-150 bg-white shadow-lg hover:shadow-none hover:scale-110"><HiMail fontSize="20px" /></Link>
+      </div>
     </div>
     {/* image div */}
-    <div className=" h-1/2 flex-grow p-6 flex justify-start items-end md:h-3/5">
-      <div className="pt-4 pb-4 ps-3 pe-3 w-max bg-white bg-opacity-5 rounded-lg"><p className="text-tangy-orange font-medium tracking-wide flex items-center gap-2"><HiMail color="red" fontSize="25px"/>dpallavi854@gmail.com</p></div>
+    <div className=" w-1/5 relative">
+      <Image className="hidden transition-all duration-300 z-0 md:block absolute drop-shadow-2xl hover:scale-90 hover:drop-shadow-none" src={"/images/girl1.png"} alt={""} fill={true} />
+      {/* <div className="absolute top-10 right-14"><Iconn img={<Image className=" z-20" src={"/images/java-icon.svg"} alt="java" width={50} height={50} />} /></div>
+      <div className="absolute bottom-20"><Iconn img={<Image src={"/images/mysql-icon.svg"} alt="mysql" width={50} height={50} />} /></div>
+      <div className="absolute bottom-16 right-4"><Iconn img={<Image src={"/images/react-icon.svg.png"} alt="react" width={50} height={50} />} /></div>
+      <div className="absolute top-0 left-10"><Iconn img={<Image src={"/images/nextjs-icon.svg"} alt="nextjs" width={50} height={50} />} /></div> */}
     </div>
   </div>);
 };
 
 export default Home;
-
-
-// oranges #F94C10 #FC4F00 #F6BA6F #FFA559 #FF6000

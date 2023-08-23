@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return <footer className=" bg-black text-white flex justify-center items-center">
+  return <footer className="">
     Made with love by PD.
   </footer>;
 };
