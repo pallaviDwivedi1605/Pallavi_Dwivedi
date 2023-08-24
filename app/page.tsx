@@ -10,7 +10,7 @@ export default function Index() {
       <section id="home" className="pt-24 pb-6 h-screen">
         <Home />
       </section>
-      {/*
+
       <section id="about" className="w-screen h-screen">
         <About />
       </section>
@@ -25,7 +25,7 @@ export default function Index() {
 
       <section id="contact" className="w-screen h-screen">
         <Contact />
-      </section> */}
+      </section>
     </main>
   );
 }
