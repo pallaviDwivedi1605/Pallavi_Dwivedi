@@ -22,7 +22,7 @@ const Home = () => {
           <h1 className=" font-bold text-3xl text-left">Hi, I'm <span className=" text-primary">Pallavi Dwivedi</span></h1>
           <h2 className=" font-extrabold text-4xl text-left"> MERN Developer.</h2>
           <p className=" font-medium text-gray-600 text-lg text-left">I will tell you how i can best help you to make your product successful.</p>
-          <div className="flex justify-center items-center md:hidden"><Image className=" scale-90 hover:scale-95" src={"/images/girl1.png"} alt={"girl"} width={200} height={400} /></div>
+          <div className="flex justify-center items-center md:hidden"><Image className=" scale-90 hover:scale-95 hover:drop-shadow-none " style={{filter: "drop-shadow(0px 5px 20px #96B6C5)"}} src={"/images/girl1.png"} alt={"girl"} width={200} height={400} /></div>
           {/* link box */}
           <div className="flex justify-center items-center md:justify-start md:mt-8">
             <div className="flex gap-2 bg-white rounded-full w-max p-1">
