@@ -35,7 +35,7 @@ const Tabs = () => {
 const Home = () => {
   return (
     <div className=" md:mx-10 mx-6 ">
-      <div className=" flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 justify-center items-center md:p-14 ">
+      <div className=" flex flex-col md:flex-row space-y-10 md:space-x-10 justify-center items-center md:p-14 ">
         {/* text div */}
         <div className=" flex flex-col gap-4 md:w-full md:px-24">
           <p className=" font-medium text-gray-600 text-md text-left ">
