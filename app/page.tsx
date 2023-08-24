@@ -7,7 +7,7 @@ import Skill from "@/components/Skill";
 export default function Index() {
   return (
     <main className=" text-center">
-      <section id="home" className="w-screen h-screen">
+      <section id="home" className="pt-24 pb-6 h-screen">
         <Home />
       </section>
 

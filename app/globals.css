@@ -68,4 +68,7 @@ transform: rotateY(180deg);
 z-index: 1;
 }
 
-
+/* form */
+.parent:focus .child1 {
+    display: inline-block;
+  }
