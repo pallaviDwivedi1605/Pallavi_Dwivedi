@@ -37,7 +37,9 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:inline">
-      <Button href={"#"} name={"Download CV"} />
+        {
+          activeLink === 1? "":<Button href={"#"} name={"Download CV"} />
+        } 
       </div>
       <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
         <div className={`transition-all duration-300 ${open ? 'transform rotate-90' : ''}`}>
