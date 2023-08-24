@@ -20,48 +20,66 @@ const Navbar = () => {
 
   const handleMenuClick = () => {
     setOpen(!open);
-  }
+  };
 
   return (
-  <nav className="backdrop-blur-xl bg-white/10 shadow-md z-20 fixed top-0 w-screen">
-    
-    <div className=" ps-8 pe-8 pt-4 pb-5 flex justify-between items-center">
-      <h1 className="text-xl font-extrabold tracking-wide">P<span className=" text-primary">D</span></h1>
-      <div className="hidden md:flex justify-center items-center gap-10">
-        {NavLinkData.map((obj) => (
-          <Link onClick={() => setActiveLink(obj.key)} href={obj.link}  key={obj.key} className={`transition-all duration-300 hover:tracking-widest hover:text-primary focus:font-semibold focus:text-lg focus:text-primary ${
-            obj.key === activeLink ? "font-semibold text-lg text-primary tracking-widest" : ""
-          }`}>
-            {obj.id}
-          </Link>  
-        ))}
-      </div>
-      <div className="hidden md:inline">
-        {
-          activeLink === 1? "":<Button href={"#"} name={"Download CV"} />
-        } 
-      </div>
-      <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
-        <div className={`transition-all duration-300 ${open ? 'transform rotate-90' : ''}`}>
-          {
-            open ? <RxCross2 color="rgba(255,0,65,1)" fontSize="25px" /> : <HiMenuAlt4 color="rgba(255,0,65,1)" fontSize="25px" />
-          }
+    <nav className="backdrop-blur-xl bg-white/10 shadow-md z-20 fixed top-0 w-screen">
+      <div className=" px-4 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-extrabold tracking-wide">
+          P<span className=" text-primary">D</span>
+        </h1>
+        <div className="hidden md:flex justify-center items-center gap-10">
+          {NavLinkData.map((obj) => (
+            <Link
+              onClick={() => setActiveLink(obj.key)}
+              href={obj.link}
+              key={obj.key}
+              className={`transition-all duration-300 hover:tracking-widest hover:text-primary focus:font-semibold focus:text-lg focus:text-primary ${
+                obj.key === activeLink
+                  ? "font-semibold text-lg text-primary tracking-widest"
+                  : ""
+              }`}
+            >
+              {obj.id}
+            </Link>
+          ))}
+        </div>
+        <div className="hidden md:inline">
+          {activeLink === 1 ? "" : <Button href={"#"} name={"Download CV"} />}
+        </div>
+        <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
+          <div
+            className={`transition-all duration-300 ${
+              open ? "transform rotate-90" : ""
+            }`}
+          >
+            {open ? (
+              <RxCross2 color="rgba(255,0,65,1)" fontSize="25px" />
+            ) : (
+              <HiMenuAlt4 color="rgba(255,0,65,1)" fontSize="25px" />
+            )}
+          </div>
         </div>
       </div>
-    </div>
-    
-    {/* small menu */}
-      {
-        open ?  <div className="bg-white bg-opacity-10 flex flex-col  md:hidden">
-        {NavLinkData.map((obj) => (
-          <Link onClick={handleMenuClick} className=" transition-all duration-300 text-right border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-primary" href={obj.link}  key={obj.key}>
-            {obj.id}
-          </Link>  
-        ))}
-      </div> : ""
-      }
-  
-  </nav>
+
+      {/* small menu */}
+      {open ? (
+        <div className="bg-white bg-opacity-10 flex flex-col  md:hidden">
+          {NavLinkData.map((obj) => (
+            <Link
+              onClick={handleMenuClick}
+              className=" transition-all duration-300 text-right border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-primary"
+              href={obj.link}
+              key={obj.key}
+            >
+              {obj.id}
+            </Link>
+          ))}
+        </div>
+      ) : (
+        ""
+      )}
+    </nav>
   );
 };
 
