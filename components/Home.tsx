@@ -63,7 +63,7 @@ const Home = () => {
             alt={"girl"}
             width={200}
             height={400}
-            className=" w-auto h-96 md:h-auto md:w-52 duration-300 md:scale-125 hover:scale-100 hover:drop-shadow-none "
+            className=" w-auto h-96 md:h-auto md:w-52 duration-300 scale-105 md:scale-125 hover:scale-100 hover:drop-shadow-none "
           />
         </div>
         {/* links */}
