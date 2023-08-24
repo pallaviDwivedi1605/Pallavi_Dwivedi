@@ -43,10 +43,6 @@ const Home = () => {
       {/* image div */}
       <div className=" w-1/5 relative">
         <Image className="hidden transition-all duration-300 z-0 md:block absolute drop-shadow-2xl hover:scale-90 hover:drop-shadow-none" src={"/images/girl1.png"} alt={""} fill={true} />
-        {/* <div className="absolute top-10 right-14"><Iconn img={<Image className=" z-20" src={"/images/java-icon.svg"} alt="java" width={50} height={50} />} /></div>
-        <div className="absolute bottom-20"><Iconn img={<Image src={"/images/mysql-icon.svg"} alt="mysql" width={50} height={50} />} /></div>
-        <div className="absolute bottom-16 right-4"><Iconn img={<Image src={"/images/react-icon.svg.png"} alt="react" width={50} height={50} />} /></div>
-        <div className="absolute top-0 left-10"><Iconn img={<Image src={"/images/nextjs-icon.svg"} alt="nextjs" width={50} height={50} />} /></div> */}
       </div>
     </div>
   </div>);
