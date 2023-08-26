@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <div className=" w-full h-screen flex  justify-center gap-24 md:ps-20 items-center relative">
-      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-gray-600 shadow-lg bg-white/20 border-white/40 backdrop-blur-xl md:px-10 relative">
+      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-gray-600 shadow-lg bg-white/10 border-white/40 backdrop-blur-xl md:px-10 relative">
         <div className=" h-full flex items-center justify-center gap-8 flex-col md:absolute md:left-10 md:items-start">
         <h2 className=" text-black text-2xl font-bold tracking-wide">Lets's <span className=" text-primary">Connect !</span></h2>
         <form action="" className=" pt-6 flex flex-col gap-10 overflow-hidden">

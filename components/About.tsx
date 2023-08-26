@@ -14,8 +14,8 @@ const About = () => {
     <div className=" md:w-2/3 flex flex-col justify-start gap-8">
       <div className=" bg-primary/80 text-white rounded-lg px-10 py-4">
         <div className="flex justify-between items-center">
-          <h2 className=" text-2xl tracking-widest font-semibold">About Me</h2>
-          <Image src={"/images/s5.svg"} alt="image" width={100} height={100} className="rounded-full border" />
+          <h2 className=" text-3xl tracking-wider font-semibold flex items-end w-4/5">About Me  <hr className=" border-t-2 h-2 w-2/5" /></h2>
+          <Image src={"/images/s6.svg"} alt="image" width={100} height={100} className=" " />
         </div>
         <p className="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem labore nobis incidunt hic veritatis voluptate iusto illo corrupti quos!</p>
       </div>
