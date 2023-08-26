@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoLogoLinkedin, IoMdCall, IoMdMail } from "react-icons/io";
@@ -46,14 +47,17 @@ const Contact = () => {
 
   return (
     <div className=" w-full h-screen flex bg-red-400 justify-center gap-24 md:ps-20 items-center relative">
-      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl flex items-center justify-center gap-8 flex-col shadow-white shadow-lg bg-white/20 border-white/40 backdrop-blur-xl md:items-start md:px-10">
+      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-white shadow-lg bg-white/20 border-white/40 backdrop-blur-xl md:px-10 relative">
+        <div className=" h-full flex items-center justify-center gap-8 flex-col md:absolute md:left-10 md:items-start">
         <h2 className=" text-black text-2xl font-bold tracking-wide">Lets's <span className=" text-primary">Connect !</span></h2>
         <form action="" className=" pt-6 flex flex-col gap-10 overflow-hidden">
           <TextField type="text" label="Name" />
           <TextField type="email" label="Email" />
           <MessageBox />
-          <button type="submit" className=" md:w-max border border-primary text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-md shadow-rose-500 hover:shadow-lg hover:text-white hover:bg-primary hover:border-white hover:shadow-rose-500 ">Send</button>
+          <button type="submit" className=" w-max border border-primary text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-md shadow-rose-500 hover:shadow-lg hover:text-white hover:bg-primary hover:border-white hover:shadow-rose-500 ">Send</button>
         </form>
+        </div>
+        <Image className=" z-10 absolute bottom-0 right-0" src={"/images/panda.svg"} alt="panda" width={200} height={200} />
       </div>
       <div className="hidden md:flex flex-col items-start justify-center gap-5 w-max right-5">
       <Link

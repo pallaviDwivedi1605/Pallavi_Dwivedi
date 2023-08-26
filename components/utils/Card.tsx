@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const Card = ({ image, label, tech, desc, link }: any) => {
   return (
@@ -19,9 +20,7 @@ const Card = ({ image, label, tech, desc, link }: any) => {
         <p className=" text-left hidden group-hover:inline overflow-clip">
           {desc}
         </p>
-        <div className="">
-          <Button name={"Visit Me"} href={link} target={"_blank"} />
-        </div>
+        <Link href={"#"} className="border rounded-lg px-4 border-primary bg-white text-primary p-2 hover:border-white hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-rose-500/50">Visit</Link>
       </div>
     </div>
   );
