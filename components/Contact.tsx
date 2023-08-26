@@ -46,8 +46,8 @@ const Contact = () => {
 
 
   return (
-    <div className=" w-full h-screen flex bg-red-400 justify-center gap-24 md:ps-20 items-center relative">
-      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-white shadow-lg bg-white/20 border-white/40 backdrop-blur-xl md:px-10 relative">
+    <div className=" w-full h-screen flex  justify-center gap-24 md:ps-20 items-center relative">
+      <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-gray-600 shadow-lg bg-white/20 border-white/40 backdrop-blur-xl md:px-10 relative">
         <div className=" h-full flex items-center justify-center gap-8 flex-col md:absolute md:left-10 md:items-start">
         <h2 className=" text-black text-2xl font-bold tracking-wide">Lets's <span className=" text-primary">Connect !</span></h2>
         <form action="" className=" pt-6 flex flex-col gap-10 overflow-hidden">
@@ -62,23 +62,23 @@ const Contact = () => {
       <div className="hidden md:flex flex-col items-start justify-center gap-5 w-max right-5">
       <Link
         href={"#"}
-        className="flex items-center text-white rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
+        className="flex items-center text-primary rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
       >
-        <IoMdCall className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-primary bg-white duration-300" />
+        <IoMdCall className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-white bg-primary duration-300" />
         +91-9306098158
       </Link>
       <Link
         href={"#"}
-        className="flex items-center text-white rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
+        className="flex items-center text-primary rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
       >
-        <IoMdMail className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-primary bg-white duration-300" />
+        <IoMdMail className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-white bg-primary duration-300" />
         dpallavi854@gmail.com
       </Link>
         <Link
         href={"#"}
-        className="flex items-center text-white rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
+        className="flex items-center text-primary rounded-full px-4 py-2 font-medium text-lg hover:shadow-lg duration-500"
       >
-        <IoLogoLinkedin className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-primary bg-white duration-300" />
+        <IoLogoLinkedin className=" text-[20px] h-10 w-10 rounded-full p-2 mr-2 text-white bg-primary duration-300" />
         www.linkedin.com/in/pallavidwivedi/
       </Link>
        
