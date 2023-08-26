@@ -72,3 +72,28 @@ z-index: 1;
 .parent:focus .child1 {
     display: inline-block;
   }
+
+
+/* Home_Links */
+
+.contact-link {
+    position: relative;
+    overflow: hidden;
+  }
+  .h2_transformation{
+    transform: translateY(-300%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-container {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-link:hover .image-container {
+    transform: translateY(180%);
+  }
+  
+  .contact-link:hover h2 {
+    transform: translateY(-150%);
+  }
+  

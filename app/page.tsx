@@ -7,23 +7,23 @@ import Skill from "@/components/Skill";
 export default function Index() {
   return (
     <main className=" text-center">
-      <section id="home" className="pt-24 pb-6 min-h-screen max-h-max">
+      <section id="home" className="pt-24 pb-14 bg-slate-50 ">
         <Home />
       </section>
 
-      <section id="about" className=" pt-24 pb-6 w-screen min-h-screen max-h-max">
+      <section id="about" className="pt-24 pb-14">
         <About />
       </section>
 
-      <section id="skills" className="pt-24 pb-6 w-screen min-h-screen max-h-max">
+      <section id="skills" className="pt-24 pb-14">
         <Skill />
       </section>
 
-      <section id="projects" className="pt-24 pb-6 w-screen min-h-screen max-h-max">
+      <section id="projects" className="pt-24 pb-14">
         <Project />
       </section>
 
-      <section id="contact" className="pt-24 pb-6 w-screen min-h-screen max-h-max">
+      <section id="contact" className="pt-24 pb-14">
         <Contact />
       </section>
     </main>
