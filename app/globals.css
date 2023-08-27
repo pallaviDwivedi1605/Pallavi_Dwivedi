@@ -176,3 +176,9 @@ z-index: 1;
   /* color: rgba(255, 0, 65, 1.2); */
   color: #fff;
 }
+
+
+/* skills */
+.shelf-shadow{
+  box-shadow: 5px -15px 2px #000;
+}

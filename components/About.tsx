@@ -26,8 +26,8 @@ const About = () => {
   return (
     <div className=" h-full w-full px-6 flex flex-col items-center gap-10 md:px-32">
       {/* image heading block */}
-      <div className=" group transition-all ease-in-out duration-300 bg-primary/70 text-white flex justify-between items-center gap-10 rounded-lg px-6 py-4 hover:flex-row-reverse container shadow-lg md:px-10">
-        <div className=" flex flex-col items-start gap-4 md:flex-col">
+      <div className=" group transition-all ease-in-out duration-300 bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6 py-4 hover:flex-row-reverse container shadow-lg md:px-10 md:flex-row">
+        <div className=" flex flex-col items-start gap-4">
           <h2 className=" main_heading">
             What Can I Do Best?
           </h2>
