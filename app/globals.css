@@ -22,7 +22,7 @@ a{
 .flip-card {
 background-color: transparent;
 width: 300px;
-height: 300px;
+height: 410px;
 perspective: 1000px;
 @apply rounded-2xl;
 }
