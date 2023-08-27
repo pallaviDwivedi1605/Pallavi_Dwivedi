@@ -6,7 +6,6 @@ import { HiExternalLink } from "react-icons/hi";
 import Image from "next/image";
 import SocialLinks from "./utils/SocialLinks";
 
-
 const Tabs = () => {
   return (
     <div className="flex justify-center items-center md:justify-start mt-5 md:mt-8 space-x-4">
