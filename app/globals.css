@@ -10,7 +10,7 @@
 }
 
 body{
-    @apply bg-gray-100
+    @apply bg-gray-200/60;
 }
 
 a{
@@ -68,10 +68,10 @@ transform: rotateY(180deg);
 z-index: 1;
 }
 
-/* form */
-.parent:focus .child1 {
-    display: inline-block;
-  }
+/* heading */
+.main_heading{
+  @apply text-4xl font-extrabold tracking-wider
+}
 
 
 /* Home_Links */
@@ -96,4 +96,83 @@ z-index: 1;
   .contact-link:hover h2 {
     transform: translateY(-150%);
   }
-  
+
+  /* flip */
+.container:hover .mirror_flip{
+  transform: rotateY(180deg);
+}
+
+/* ribbon */
+
+ .ribbon-container {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+.ribbon {
+  background: rgba(255, 0, 65, 1);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.5);
+  font-family: Charter, serif;
+  font-size: 16px;
+  line-height: 1.0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.25em 0;
+  position: relative;
+  width: 70%;
+}
+.ribbon:before,
+.ribbon:after {
+  border: 1.5em solid rgba(255, 0, 65, 1);
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1em;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.ribbon-content {
+  border-top: 0.0625em dashed rgb(253, 125, 157);
+  border-bottom: 0.0625em dashed rgb(253, 125, 157);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.08), inset 0px -1px 1px rgba(255, 255, 255, 0.08), 0px -1px 1px rgba(255, 255, 255, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.08);
+  display: block;
+  padding: 0.6875em 0;
+}
+.ribbon-content:before,
+.ribbon-content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-color: rgba(255, 0, 65, 1) transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+.ribbon a {
+  /* color: rgba(255, 0, 65, 1); */
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25);
+}
+.ribbon a:hover {
+  /* color: rgba(255, 0, 65, 1.2); */
+  color: #fff;
+}

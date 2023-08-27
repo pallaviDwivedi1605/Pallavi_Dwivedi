@@ -12,7 +12,7 @@ const FlipCard = ({image,name,desc,skill}:any) => {
           <p className='text-lg font-medium'>{skill}</p>
         </div>
       </div>
-      <div className="flip-card-back flex flex-col gap-3 justify-center items-center shadow-inner">
+      <div className="flip-card-back shadow-md px-4 py-8 text-left">
         <p>{desc}</p>
       </div>
     </div>
