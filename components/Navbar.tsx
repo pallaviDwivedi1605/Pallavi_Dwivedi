@@ -64,11 +64,11 @@ const Navbar = () => {
 
       {/* small menu */}
       {open ? (
-        <div className="bg-white bg-opacity-10 flex flex-col  md:hidden">
+        <div className="bg-white bg-opacity-10 flex flex-col  md:hidden border-t-2 border-rose-300">
           {NavLinkData.map((obj) => (
             <Link
               onClick={handleMenuClick}
-              className=" transition-all duration-300 text-right text-lg border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-primary"
+              className=" transition-all duration-300 text-right text-lg border-b-2 font-medium tracking-wider border-rose-300 pe-12 focus:text-primary"
               href={obj.link}
               key={obj.key}
             >
