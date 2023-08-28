@@ -70,7 +70,7 @@ const Skill = () => {
 
   return(
     <div className=" min-h-fit max-h-fit w-screen px-6 md:px-32 flex flex-col gap-32 md:gap-20 items-start">
-      <h1 className="main_heading text-primary">Skills <span className="text-black">and</span> Experience</h1>
+      <h1 className="main_heading text-primary">Competencies <span className="text-black">&</span> Experience</h1>
       <div className="w-full flex flex-col-reverse gap-40 md:flex-row md:justify-between md:pe-20 ">
         <Experince />
         <SkillSection />

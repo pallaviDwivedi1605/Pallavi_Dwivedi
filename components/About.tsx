@@ -28,7 +28,7 @@ const About = () => {
       {/* image heading block */}
       <div className=" transition-all ease-in-out duration-300 bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6 py-4  container shadow-lg md:px-10 md:flex-row md:hover:flex-row-reverse">
         <div className=" flex flex-col items-start gap-4">
-          <h2 className=" main_heading">What Can I Do Best?</h2>
+          <h2 className=" main_heading">The Artist</h2>
           <p className="text-left">
             I’m a Computer Science and Engineering graduate with strong web
             development and programming skills. Open to exciting opportunities
