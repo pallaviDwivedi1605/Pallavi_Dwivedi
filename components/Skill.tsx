@@ -39,7 +39,7 @@ const Skill = () => {
 
   const Experince = () => {
     return (
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-16 h-fit">
       <div className="max-w-[500px] min-w-max h-32 md:h-24 px-4 bg-white shadow-xl shadow-rose-400/50 flex gap-5 justify-center flex-col md:flex-row md:justify-between items-center rounded-xl">
         <p className="text-primary font-semibold text-xl">Feb'23 - May'23</p>
         <div className=" flex flex-col items-end">
@@ -47,7 +47,7 @@ const Skill = () => {
           <p className=" text-base font-normal">Mercados Energy Market India</p>
         </div>
       </div>
-      <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 flex flex-col rounded-xl">
+      <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 hidden md:flex flex-col rounded-xl">
         <h3 className="text-2xl font-semibold text-primary">Open To Work</h3>
         <div className="flex gap-6 md:justify-between items-center flex-col md:flex-row">
           <div className=" flex flex-col items-start">
@@ -69,7 +69,7 @@ const Skill = () => {
   }
 
   return(
-    <div className=" min-h-screen max-h-max w-screen px-6 md:px-32 flex flex-col gap-32 items-start">
+    <div className=" min-h-fit max-h-fit w-screen px-6 md:px-32 flex flex-col gap-32 items-start">
       <h1 className="main_heading text-primary">Skills <span className="text-black">and</span> Experience</h1>
       <div className="w-full flex flex-col-reverse gap-40 md:flex-row md:justify-between md:pe-20 ">
         <Experince />
