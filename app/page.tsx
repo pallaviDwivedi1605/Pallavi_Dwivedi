@@ -23,7 +23,7 @@ export default function Index() {
         <Project />
       </section>
 
-      <section id="contact" className=" bg-gray-100">
+      <section id="contact" className="  bg-gray-100">
         <Contact />
       </section>
     </main>
