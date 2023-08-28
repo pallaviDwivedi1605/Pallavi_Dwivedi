@@ -6,7 +6,6 @@ import { IoLogoLinkedin, IoMdCall, IoMdMail } from "react-icons/io";
 import SocialLinks from "./utils/SocialLinks";
 
 const Contact = () => {
-
   const handleSubmit = async ({ e }: any) => {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbxipujinuI_6WE0SjOEHYUA-os1AI_RDMVUHGf2Jn3SvPxQfWApQr5nzhmuwa7itfILfw/exec";
@@ -124,7 +123,9 @@ const Contact = () => {
           www.linkedin.com/in/pallavidwivedi/
         </Link>
       </div>
-      <div className="md:hidden"><SocialLinks /></div>
+      <div className="md:hidden">
+        <SocialLinks />
+      </div>
     </div>
   );
 };
