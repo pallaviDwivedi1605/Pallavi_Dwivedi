@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div className=" h-full w-full px-6 flex flex-col items-center gap-4 md:px-32">
       {/* image heading block */}
-      <div className=" group transition-all ease-in-out duration-300 bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6  container shadow-lg md:px-10 md:flex-row">
+      <div className=" group transition-all ease-in-out duration-300 bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6  container shadow-lg md:px-10 md:flex-row md:hover:flex-row-reverse">
         <div className=" flex flex-col items-start gap-4">
           <h2 className=" main_heading">What Can I Do Best?</h2>
           <p className="text-left">
@@ -35,7 +35,7 @@ const About = () => {
             and collaborations.
           </p>
         </div>
-        <Image src={"/images/s6.svg"} alt="image" width={130} height={130} />
+        <Image src={"/images/s6.svg"} alt="image" width={130} height={130} className="mirror_flip" />
       </div>
       {/* achievement block */}
       <div className=" w-full flex flex-col md:flex-row md:justify-between">

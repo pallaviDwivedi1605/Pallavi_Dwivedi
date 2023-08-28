@@ -1,23 +1,84 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { IoMdCall } from "react-icons/io";
 
 const Skill = () => {
-  return <div className=" h-full w-full px-6 flex justify-center items-center"> 
-      
-      <div className=" w-52 h-52 relative rounded-full bg-red-600">
-      <div className=" w-20 h-20 bg-pink-100 rounded-full absolute -top-24">I1</div>
-      <div className=" w-20 h-20 bg-pink-200 rounded-full absolute -top-0  -left-24">I2</div>
-      <div className=" w-20 h-20 bg-pink-300 rounded-full absolute bottom-0 -left-24">I3</div>
-      <div className=" w-20 h-20 bg-pink-400 rounded-full absolute -bottom-24 left-0">I4</div>
-      <div className=" w-20 h-20 bg-pink-500 rounded-full absolute -bottom-24 right-0">I5</div>
-      <div className=" w-20 h-20 bg-pink-600 rounded-full absolute -bottom-0 -right-24">I6</div>
-      <div className=" w-20 h-20 bg-pink-700 rounded-full absolute -top-0 -right-24">I7</div>
-      <div className=" w-20 h-20 bg-pink-800 rounded-full absolute -top-24 right-0">I8</div>
-      
-      
-      
+
+  const SkillSection = () => {
+    return <div className=" flex justify-center items-center">
+    <div className=" w-52 h-52 relative rounded-full flex justify-center items-center bg-primary">
+      <Image src={"/images/s5.svg"} alt="image" width={200} height={200} className="hover:scale-90" />
+      <div className=" w-20 h-20 bg-white rounded-full absolute -top-24 left-0 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/java-icon.svg"} alt="java" width={50} height={50} className=" group-hover:scale-125" />
       </div>
-  </div>;
+      <div className=" w-20 h-20 bg-white rounded-full absolute -top-0  -left-24 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/react.svg"} alt="react js" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute bottom-0 -left-24 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/nextjs-icon.svg"} alt="next js" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute -bottom-24 left-0 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/mysql-icon.svg"} alt="mysql" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute -bottom-24 right-0 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/nodejs-icon.svg"} alt="java" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute -bottom-0 -right-24 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/expressjs-icon.svg"} alt="java" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute -top-0 -right-24 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/tailwindcss.svg"} alt="java" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+      <div className=" w-20 h-20 bg-white rounded-full absolute -top-24 right-0 flex justify-center items-center group shadow-lg hover:shadow-xl">
+        <Image src={"/images/mongodb-icon.svg"} alt="java" width={50} height={50} className=" group-hover:scale-125" />
+      </div>
+    </div>
+    </div>;
+  }
+
+  const Experince = () => {
+    return (
+      <div className="flex flex-col gap-16">
+      <div className="max-w-[500px] min-w-max h-32 md:h-24 px-4 bg-white shadow-xl shadow-rose-400/50 flex gap-5 justify-center flex-col md:flex-row md:justify-between items-center rounded-xl">
+        <p className="text-primary font-semibold text-xl">Feb'23 - May'23</p>
+        <div className=" flex flex-col items-end">
+          <h4 className=" text-2xl">React Developer Intern</h4>
+          <p className=" text-base font-normal">Mercados Energy Market India</p>
+        </div>
+      </div>
+      <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 flex flex-col rounded-xl">
+        <h3 className="text-2xl font-semibold text-primary">Open To Work</h3>
+        <div className="flex gap-6 md:justify-between items-center flex-col md:flex-row">
+          <div className=" flex flex-col items-start">
+              <p>1. React Developer</p>
+              <p>2. Front-end Developer</p>
+              <p>3. Full stack Developer</p>
+          </div>
+          <Link
+          href={"mailto:dpallavi854@gmail.com"}
+          className=" group flex items-center w-fit h-fit bg-white shadow-md text-primary hover:text-white rounded-full px-4 py-1 tracking-wide font-medium text-lg hover:bg-primary hover:shadow-xl duration-500"
+          >
+            <IoMdCall className="bg-primary text-[20px] h-8 w-8 rounded-full p-2 mr-1 text-white group-hover:text-primary group-hover:bg-white duration-300 " />
+            Hire Me
+          </Link>
+        </div>
+      </div>
+      </div>
+    )
+  }
+
+  return(
+    <div className=" min-h-screen max-h-max w-screen px-6 md:px-32 flex flex-col gap-32 items-start">
+      <h1 className="main_heading text-primary">Skills <span className="text-black">and</span> Experience</h1>
+      <div className="w-full flex flex-col-reverse gap-40 md:flex-row md:justify-between md:pe-20 ">
+        <Experince />
+        <SkillSection />
+      </div>
+    </div>
+  )
+
+ 
 };
 
 export default Skill
