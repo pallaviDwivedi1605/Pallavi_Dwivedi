@@ -45,7 +45,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:inline">
-          {activeLink === 1 ? "" : <Button href={"#"} name={"Download CV"} />}
+          {activeLink === 1 ? "" : <Button href={"/PALLAVI_DWIVEDI.pdf"} target="_blank" name={"Download CV"} />}
         </div>
         <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
           <div
