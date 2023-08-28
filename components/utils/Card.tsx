@@ -20,7 +20,7 @@ const Card = ({ image, label, tech, desc, link }: any) => {
         <p className=" text-left hidden group-hover:inline overflow-clip">
           {desc}
         </p>
-        <Link href={"#"} className="border rounded-lg px-4 border-primary bg-white text-primary p-2 hover:border-white hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-rose-500/50">Visit</Link>
+        <Link href={link} target="_blank" className="border rounded-lg px-4 border-primary bg-white text-primary p-2 hover:border-white hover:text-white hover:bg-primary hover:shadow-lg hover:shadow-rose-500/50">Visit</Link>
       </div>
     </div>
   );
