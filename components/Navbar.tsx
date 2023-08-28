@@ -68,7 +68,7 @@ const Navbar = () => {
           {NavLinkData.map((obj) => (
             <Link
               onClick={handleMenuClick}
-              className=" transition-all duration-300 text-right border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-primary"
+              className=" transition-all duration-300 text-right text-lg border border-orange-300 pe-12 focus:font-semibold focus:text-lg focus:text-primary"
               href={obj.link}
               key={obj.key}
             >
