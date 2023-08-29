@@ -45,7 +45,15 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:inline">
-          {activeLink === 1 ? "" : <Button href={"/PALLAVI_DWIVEDI.pdf"} target="_blank" name={"Download CV"} />}
+          {activeLink === 1 ? (
+            ""
+          ) : (
+            <Button
+              href={"/PALLAVI_DWIVEDI.pdf"}
+              target="_blank"
+              name={"Download CV"}
+            />
+          )}
         </div>
         <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
           <div
@@ -68,7 +76,7 @@ const Navbar = () => {
           {NavLinkData.map((obj) => (
             <Link
               onClick={handleMenuClick}
-              className=" transition-all duration-300 text-right text-lg border-b-2 font-medium tracking-wider border-rose-300 pe-12 focus:text-primary"
+              className=" transition-all duration-300 text-left px-6 py-2 text-lg border-dotted border-b-2 font-medium tracking-wider hover:bg-primary/10 text-primary border-rose-300 pe-12 focus:text-primary"
               href={obj.link}
               key={obj.key}
             >

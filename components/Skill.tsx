@@ -97,15 +97,17 @@ const Skill = () => {
       <div className="flex flex-col gap-16 h-fit">
         <div className="max-w-[500px] min-w-max h-32 md:h-24 px-4 bg-white shadow-xl shadow-rose-400/50 flex gap-5 justify-center flex-col md:flex-row md:justify-between items-center rounded-xl">
           <p className="text-primary font-semibold text-xl">Feb’23 - May’23</p>
-          <div className=" flex flex-col items-end">
-            <h4 className=" text-2xl">React Developer Intern</h4>
+          <div className=" flex flex-col items-center justify-center">
+            <h4 className=" text-2xl font-medium">React Developer Intern</h4>
             <p className=" text-base font-normal">
               Mercados Energy Market India
             </p>
           </div>
         </div>
-        <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 flex flex-col rounded-xl">
-          <h3 className="text-2xl font-semibold text-primary">Open To Work</h3>
+        <div className=" px-10 py-2 gap-5 flex flex-col rounded-xl justify-center items-center">
+          <h3 className="text-2xl font-semibold text-primary border-b-4 border-primary/70 rounded-md w-fit">
+            Open To Work
+          </h3>
           <div className="flex gap-6 md:justify-between items-center flex-col md:flex-row">
             <div className=" flex flex-col items-start">
               <p>1. React Developer</p>
