@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div className=" h-full w-full px-6 flex flex-col items-center gap-4 md:px-32">
       {/* image heading block */}
-      <div className=" transition-all ease-in-out bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6  container shadow-lg md:px-10 md:flex-row outline outline-[#FF0061] outline-offset-0 outline-4 hover:outline-offset-4 duration-200">
+      <div className=" transition-all py-4 md:py-0 ease-in-out bg-primary/70 text-white flex flex-col justify-between items-center gap-10 rounded-lg px-6  container shadow-lg md:px-10 md:flex-row outline outline-[#FF0061] outline-offset-0 outline-4 hover:outline-offset-4 duration-200">
         <div className=" flex flex-col items-start gap-4">
           <h2 className=" main_heading">The Artist</h2>
           <p className="text-left">
