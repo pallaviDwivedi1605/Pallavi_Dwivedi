@@ -26,10 +26,11 @@ const Contact = () => {
     }
   };
 
-  const TextField = ({ type, label }: any) => {
+  const TextField = ({ type, label, Name }: any) => {
     return (
       <div className="relative w-72">
         <input
+          name={Name}
           type={type}
           placeholder={label}
           required
@@ -49,7 +50,7 @@ const Contact = () => {
     return (
       <div className="relative w-72">
         <textarea
-          name="message"
+          name="Message"
           cols={24}
           rows={1}
           placeholder={"Message"}
@@ -77,15 +78,15 @@ const Contact = () => {
           <form
             action=""
             onSubmit={handleSubmit}
-            className=" py-6 flex flex-col gap-10 overflow-hidden"
+            className=" py-6 px-4 flex flex-col gap-10 overflow-hidden"
           >
-            <TextField type="text" label="Name" />
-            <TextField type="email" label="Email" />
+            <TextField type="text" label="Name" Name="Name" />
+            <TextField type="email" label="Email" Name="Email" />
             <MessageBox />
             <button
               type="submit"
               onClick={handleSubmit}
-              className=" w-max  text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-lg shadow-rose-500 hover:shadow-xl hover:text-white hover:bg-primary "
+              className=" w-max text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-lg shadow-rose-300 hover:shadow-lg  hover:shadow-rose-300 hover:text-white hover:bg-primary duration-300  "
             >
               Send
             </button>
