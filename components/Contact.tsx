@@ -6,9 +6,9 @@ import { IoLogoLinkedin, IoMdCall, IoMdMail } from "react-icons/io";
 import SocialLinks from "./utils/SocialLinks";
 
 const Contact = () => {
-  const handleSubmit = async ({ e }: any) => {
+  const handleSubmit = async (e: any) => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxipujinuI_6WE0SjOEHYUA-os1AI_RDMVUHGf2Jn3SvPxQfWApQr5nzhmuwa7itfILfw/exec";
+      "https://script.google.com/macros/s/AKfycbxB-B550o49tTI7dCZwGmT5P2SDT_2VJ4SLe8mBS3tZR9UmRB8PxYphHJ3ok-P9FG0P0A/exec";
 
     try {
       const response = await fetch(scriptURL, {
@@ -26,47 +26,6 @@ const Contact = () => {
     }
   };
 
-  const TextField = ({ type, label, Name }: any) => {
-    return (
-      <div className="relative w-72">
-        <input
-          name={Name}
-          type={type}
-          placeholder={label}
-          required
-          className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
-        />
-        <label
-          htmlFor="name"
-          className=" absolute left-1 hidden peer-focus:block transition-all ease-in-out peer-focus:text-primary peer-focus:text-xs  peer-focus:-top-4"
-        >
-          {label}
-        </label>
-      </div>
-    );
-  };
-
-  const MessageBox = () => {
-    return (
-      <div className="relative w-72">
-        <textarea
-          name="Message"
-          cols={24}
-          rows={1}
-          placeholder={"Message"}
-          required
-          className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
-        ></textarea>
-        <label
-          htmlFor="name"
-          className=" absolute left-0 hidden peer-focus:block transition-all ease-in-out peer-focus:text-primary peer-focus:text-xs  peer-focus:-top-4"
-        >
-          Message
-        </label>
-      </div>
-    );
-  };
-
   return (
     <div className=" w-full h-screen flex flex-col justify-center gap-24 md:ps-20 items-center relative md:flex-row">
       {/* form box */}
@@ -75,14 +34,57 @@ const Contact = () => {
           <h2 className=" text-black text-2xl font-bold tracking-wide">
             Let’s <span className=" text-primary">Connect !</span>
           </h2>
+
           <form
-            action=""
             onSubmit={handleSubmit}
-            className=" py-6 px-4 flex flex-col gap-10 overflow-hidden"
+            className="flex flex-col space-y-8 w-full md:w-fit"
           >
-            <TextField type="text" label="Name" Name="Name" />
-            <TextField type="email" label="Email" Name="Email" />
-            <MessageBox />
+            <div className="relative w-72">
+              <input
+                name="Name"
+                type="text"
+                placeholder="Name"
+                required
+                className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
+              />
+              <label
+                htmlFor="name"
+                className=" absolute left-1 hidden peer-focus:block transition-all ease-in-out peer-focus:text-primary peer-focus:text-xs  peer-focus:-top-4"
+              >
+                Name
+              </label>
+            </div>
+
+            <div className="relative w-72">
+              <input
+                name="Email"
+                type="Email"
+                placeholder="Email"
+                required
+                className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
+              />
+              <label
+                htmlFor="name"
+                className=" absolute left-1 hidden peer-focus:block transition-all ease-in-out peer-focus:text-primary peer-focus:text-xs  peer-focus:-top-4"
+              >
+                Email
+              </label>
+            </div>
+
+            <div className="relative w-72">
+              <textarea
+                name="Message"
+                placeholder="Message"
+                required
+                className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
+              ></textarea>
+              <label
+                htmlFor="name"
+                className=" absolute left-0 hidden peer-focus:block transition-all ease-in-out peer-focus:text-primary peer-focus:text-xs  peer-focus:-top-4"
+              >
+                Message
+              </label>
+            </div>
             <button
               type="submit"
               onClick={handleSubmit}
