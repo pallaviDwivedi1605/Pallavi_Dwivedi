@@ -104,7 +104,7 @@ const Skill = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 hidden md:flex flex-col rounded-xl">
+        <div className="max-w-[500px] min-w-max h-40 px-10 py-2 gap-5 flex flex-col rounded-xl">
           <h3 className="text-2xl font-semibold text-primary">Open To Work</h3>
           <div className="flex gap-6 md:justify-between items-center flex-col md:flex-row">
             <div className=" flex flex-col items-start">
@@ -114,7 +114,7 @@ const Skill = () => {
             </div>
             <Link
               href={"mailto:dpallavi854@gmail.com"}
-              className=" group flex items-center w-fit h-fit bg-white shadow-md text-primary hover:text-white rounded-full px-4 py-1 tracking-wide font-medium text-lg hover:bg-primary hover:shadow-xl duration-500"
+              className=" group flex items-center w-fit h-fit bg-white shadow-md shadow-red-200 text-primary hover:text-white md:rounded-full rounded-xl px-4 py-1 tracking-wide font-medium text-lg hover:bg-primary hover:shadow-xl duration-500"
             >
               <IoMdCall className="bg-primary text-[20px] h-8 w-8 rounded-full p-2 mr-1 text-white group-hover:text-primary group-hover:bg-white duration-300 " />
               Hire Me

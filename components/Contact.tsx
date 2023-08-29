@@ -77,7 +77,7 @@ const Contact = () => {
           <form
             action=""
             onSubmit={handleSubmit}
-            className=" pt-6 flex flex-col gap-10 overflow-hidden"
+            className=" py-6 flex flex-col gap-10 overflow-hidden"
           >
             <TextField type="text" label="Name" />
             <TextField type="email" label="Email" />
@@ -85,7 +85,7 @@ const Contact = () => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className=" w-max border border-primary text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-lg shadow-rose-500 hover:shadow-xl hover:text-white hover:bg-primary "
+              className=" w-max  text-primary bg-white px-6 py-2 rounded-lg text-lg font-medium shadow-lg shadow-rose-500 hover:shadow-xl hover:text-white hover:bg-primary "
             >
               Send
             </button>
