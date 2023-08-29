@@ -24,10 +24,18 @@ const Navbar = () => {
 
   return (
     <nav className="backdrop-blur-xl bg-white/10 shadow-md z-20 fixed top-0 w-screen">
-      <div className=" px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-extrabold tracking-wide">
+      <div className=" px-4 py-4 flex justify-between items-center overflow-hidden ">
+        {/* <h1 className="text-xl font-extrabold tracking-wide">
           P<span className=" text-primary">D</span>
-        </h1>
+        </h1> */}
+
+        <Image
+          src={"/images/logo.svg"}
+          height={100}
+          width={100}
+          alt="Logo"
+          // className=" h-10 w-auto"
+        />
         <div className="hidden md:flex justify-center items-center gap-10">
           {NavLinkData.map((obj) => (
             <Link
