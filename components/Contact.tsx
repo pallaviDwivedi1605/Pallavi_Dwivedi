@@ -76,6 +76,7 @@ const Contact = () => {
                 name="Message"
                 placeholder="Message"
                 required
+                rows={1}
                 className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
               ></textarea>
               <label
