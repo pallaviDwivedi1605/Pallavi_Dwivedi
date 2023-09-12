@@ -9,6 +9,25 @@
     scroll-behavior: smooth;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: white; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF0041; 
+  border-radius: 10px;
+}
+
+
 body{
     @apply bg-gray-200/60;
 }
