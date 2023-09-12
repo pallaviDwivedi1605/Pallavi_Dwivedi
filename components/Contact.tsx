@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" w-full h-screen flex flex-col justify-center gap-24 md:ps-20 items-center relative md:flex-row">
+    <div className=" w-full h-screen pt-14 flex flex-col justify-center gap-24 md:ps-20 items-center relative md:flex-row">
       {/* form box */}
       <div className="w-4/5 h-3/5 md:w-2/5 md:shadow-white-shadow rounded-2xl shadow-gray-600 shadow-lg bg-white/10 border-white/40 backdrop-blur-xl md:px-10 relative">
         <div className=" h-full flex items-center justify-center gap-8 flex-col md:absolute px-5 md:items-start">
@@ -76,6 +76,7 @@ const Contact = () => {
                 name="Message"
                 placeholder="Message"
                 required
+                rows={1}
                 className=" w-full py-0.5 bg-transparent border-b border-gray-700 placeholder-gray-700 focus:outline-none focus:border-b-2 focus:border-primary invalid:border-red-800 invalid:border-b-2 focus:placeholder-transparent peer"
               ></textarea>
               <label
